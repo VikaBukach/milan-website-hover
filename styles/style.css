@@ -68,6 +68,14 @@ body{
     font-size: 18px;
 }
 
+.contacts:hover .contacts__email {
+    color: #F26522;
+}
+
+.contacts:hover .contacts__phone{
+    color: #F26522;
+}
+
 .contacts__email{
     text-decoration: none;
     color: #FFFFFF;
