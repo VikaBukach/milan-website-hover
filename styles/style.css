@@ -89,7 +89,7 @@ body{
 
 .content__items{
     display: grid;
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 220px);
     column-gap: 61px;
     row-gap: 78px;
@@ -101,22 +101,26 @@ body{
 
 .content__item-img{
     display: block;
+    width: 300px;
+    height: 220px;
 }
 
 .content__item-description {
-    display: none;
+    display: flex;
     justify-content: space-between;
     position: absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 304px;
+    bottom: 0;
+    left: 0;
+    width: 300px;
     height: 60px;
     background-color: #F26522;
     text-decoration: none;
+    transition: all 2s;
+    opacity: 0;
 }
 
 .content__item:hover .content__item-description{
-    display: flex;
+    opacity: 1;
 }
 
 .content__item:hover .content__item-txt{
